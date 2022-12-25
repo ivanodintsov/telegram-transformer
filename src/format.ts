@@ -43,7 +43,7 @@ export const format = (
 
     const prevEntity = newEntities[i - 1];
 
-    if (prevEntity && newOffset >= prevEntity.offset + prevEntity.length) {
+    if (prevEntity && newOffset > prevEntity.offset + prevEntity.length) {
       prevOffsetChange += prevAfterChange;
       prevAfterChange = 0;
     }
