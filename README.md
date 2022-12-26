@@ -1,7 +1,12 @@
 <header>
-
+<div align="center">
 <h1 align="center">Telegram message transformer</h1>
 
+<a href="https://www.npmjs.com/package/telegram-transformer">
+  <img src="https://img.shields.io/npm/v/telegram-transformer.svg" alt="Latest Release">
+</a>
+
+</div>
 </header>
 
 ## Introduction
