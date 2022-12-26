@@ -7,7 +7,7 @@ export const defaultFormatter: FormatterFn = (entityText, entity, text) => {
   return {
     before,
     after,
-    text: `${before}${entityText}${after}`,
+    text: entityText,
   };
 };
 
@@ -38,7 +38,7 @@ export const htmlFormatters: FormattersDict = {
     return {
       before,
       after,
-      text: `${before}${entityText}${after}`,
+      text: entityText,
     };
   },
   hashtag: (entityText, entity, text) => {
@@ -48,7 +48,7 @@ export const htmlFormatters: FormattersDict = {
     return {
       before,
       after,
-      text: `${before}${entityText}${after}`,
+      text: entityText,
     };
   },
   url: (entityText, entity, text) => {
@@ -62,7 +62,7 @@ export const htmlFormatters: FormattersDict = {
     return {
       before,
       after,
-      text: `${before}${entityText}${after}`,
+      text: entityText,
     };
   },
   email: (entityText, entity, text) => {
@@ -72,7 +72,7 @@ export const htmlFormatters: FormattersDict = {
     return {
       before,
       after,
-      text: `${before}${entityText}${after}`,
+      text: entityText,
     };
   },
   phone_number: (entityText, entity, text) => {
@@ -82,7 +82,7 @@ export const htmlFormatters: FormattersDict = {
     return {
       before,
       after,
-      text: `${before}${entityText}${after}`,
+      text: entityText,
     };
   },
   spoiler: (entityText, entity, text) => {
@@ -92,7 +92,7 @@ export const htmlFormatters: FormattersDict = {
     return {
       before,
       after,
-      text: `${before}${entityText}${after}`,
+      text: entityText,
     };
   },
   text_link: (entityText, entity, text) => {
@@ -104,7 +104,7 @@ export const htmlFormatters: FormattersDict = {
     return {
       before,
       after,
-      text: `${before}${entityText}${after}`,
+      text: entityText,
     };
   },
   bold: (entityText, entity, text) => {
@@ -114,7 +114,7 @@ export const htmlFormatters: FormattersDict = {
     return {
       before,
       after,
-      text: `${before}${entityText}${after}`,
+      text: entityText,
     };
   },
   italic: (entityText, entity, text) => {
@@ -124,7 +124,7 @@ export const htmlFormatters: FormattersDict = {
     return {
       before,
       after,
-      text: `${before}${entityText}${after}`,
+      text: entityText,
     };
   },
   underline: (entityText, entity, text) => {
@@ -134,7 +134,7 @@ export const htmlFormatters: FormattersDict = {
     return {
       before,
       after,
-      text: `${before}${entityText}${after}`,
+      text: entityText,
     };
   },
   strikethrough: (entityText, entity, text) => {
@@ -144,7 +144,7 @@ export const htmlFormatters: FormattersDict = {
     return {
       before,
       after,
-      text: `${before}${entityText}${after}`,
+      text: entityText,
     };
   },
 };

@@ -67,7 +67,7 @@ export const format = (
     prevLengthChange = formatted.before.length + formatted.after.length;
     offsetChange += formatted.before.length;
     afterOffsetChange += formatted.after.length;
-    newText = `${beforeEntity}${formatted.text}${afterEntity}`;
+    newText = `${beforeEntity}${formatted.before}${formatted.text}${formatted.after}${afterEntity}`;
 
     if (i === entities.length - 1) {
       entity.offset += prevOffsetChange;
