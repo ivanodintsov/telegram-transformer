@@ -87,3 +87,43 @@ console.log(formatted);
 }
 */
 ```
+
+### Custom transformer
+
+```js
+import formatText, { htmlFormatters } from 'telegram-transformer';
+import { MessageEntity } from 'typegram';
+
+const text = 'Hello @username #awesome_hashtag';
+const entities: MessageEntity[] = [
+  { offset: 6, length: 9, type: 'mention' },
+  { offset: 16, length: 16, type: 'hashtag' },
+];
+
+const formatters = {
+  mention: (entityText: string, entity: MessageEntity, text: string) => ({
+    before: '<awesome-mention>',
+    after: '</awesome-mention>',
+    text: entityText,
+  }),
+  hashtag: (entityText: string, entity: MessageEntity, text: string) => ({
+    before: '<span class="hashtag">',
+    after: '</span>',
+    text: entityText,
+  }),
+};
+
+const formatted = formatText(text, entities, { formatters });
+
+console.log(formatted);
+
+/*
+{
+  text: 'Hello <awesome-mention>@username</awesome-mention> <span class="hashtag">#awesome_hashtag</span>',
+  entities: [
+    { offset: 6, length: 44, type: 'mention' },
+    { offset: 51, length: 45, type: 'hashtag' }
+  ]
+}
+*/
+```
