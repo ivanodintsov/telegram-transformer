@@ -23,7 +23,7 @@
     "url": "git+ssh://git@github.com/ivanodintsov/telegram-transformer.git"
   },
   "bugs": {
-    "url": "https://github.com/ivanodintsov/telegraf/telegram-transformer"
+    "url": "https://github.com/ivanodintsov/telegram-transformer"
   },
   "files": [
     "lib/**/*"
